@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             if(! etEUR.getText().toString().isEmpty()) {
                 double eur = Double.parseDouble(etEUR.getText().toString());
-                double usd = eur * 1.09;
+                double usd = eur * 1.5;
                 etUSD.setText(String.format(Locale.getDefault(), "%.2f", usd));
             }
         }
